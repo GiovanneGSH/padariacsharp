@@ -97,7 +97,7 @@
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(115, 41);
             this.btnEntrar.TabIndex = 2;
-            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.Text = "&Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
             // 
             // btnSair
@@ -107,7 +107,7 @@
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(115, 41);
             this.btnSair.TabIndex = 3;
-            this.btnSair.Text = "Sair";
+            this.btnSair.Text = "&Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             // 
             // frmLogin
