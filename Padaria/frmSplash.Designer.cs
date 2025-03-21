@@ -55,7 +55,6 @@
             this.lblNumero.Size = new System.Drawing.Size(15, 16);
             this.lblNumero.TabIndex = 1;
             this.lblNumero.Text = "0";
-            this.lblNumero.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblPorcentagem
             // 

@@ -16,10 +16,5 @@ namespace Padaria
         {
             InitializeComponent();
         }
-
-        private void frmPesquisarFuncionarios_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

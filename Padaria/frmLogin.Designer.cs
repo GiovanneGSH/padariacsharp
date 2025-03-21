@@ -48,7 +48,6 @@
             this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctLogo.TabIndex = 0;
             this.pctLogo.TabStop = false;
-            this.pctLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblUsuario
             // 
@@ -59,7 +58,6 @@
             this.lblUsuario.Size = new System.Drawing.Size(68, 20);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Usuário:";
-            this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
             // lblSenha
             // 

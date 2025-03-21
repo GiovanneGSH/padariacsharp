@@ -16,15 +16,5 @@ namespace Padaria
         {
             InitializeComponent();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblUsuario_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
