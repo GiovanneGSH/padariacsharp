@@ -36,13 +36,13 @@
             this.txtNumero2 = new System.Windows.Forms.TextBox();
             this.txtResposta = new System.Windows.Forms.TextBox();
             this.gpbOperacoes = new System.Windows.Forms.GroupBox();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.rdbDivisao = new System.Windows.Forms.RadioButton();
             this.rdbMultiplicacao = new System.Windows.Forms.RadioButton();
             this.rdbSubtrair = new System.Windows.Forms.RadioButton();
             this.rdbSomar = new System.Windows.Forms.RadioButton();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.gpbOperacoes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,43 +114,6 @@
             this.gpbOperacoes.TabStop = false;
             this.gpbOperacoes.Text = "Operações";
             // 
-            // btnCalcular
-            // 
-            this.btnCalcular.Image = ((System.Drawing.Image)(resources.GetObject("btnCalcular.Image")));
-            this.btnCalcular.Location = new System.Drawing.Point(515, 78);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(129, 59);
-            this.btnCalcular.TabIndex = 8;
-            this.btnCalcular.Text = "&Calcular";
-            this.btnCalcular.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCalcular.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
-            // 
-            // button2
-            // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(515, 150);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 59);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "&Limpar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(515, 222);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 59);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "&Sair";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // rdbDivisao
             // 
             this.rdbDivisao.AutoSize = true;
@@ -198,6 +161,45 @@
             this.rdbSomar.TabStop = true;
             this.rdbSomar.Text = "Somar";
             this.rdbSomar.UseVisualStyleBackColor = true;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Image = ((System.Drawing.Image)(resources.GetObject("btnCalcular.Image")));
+            this.btnCalcular.Location = new System.Drawing.Point(515, 78);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(129, 59);
+            this.btnCalcular.TabIndex = 8;
+            this.btnCalcular.Text = "&Calcular";
+            this.btnCalcular.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCalcular.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // button2
+            // 
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(515, 150);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(129, 59);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "&Limpar";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(515, 222);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(129, 59);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "&Sair";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // frmCalculadora
             // 
