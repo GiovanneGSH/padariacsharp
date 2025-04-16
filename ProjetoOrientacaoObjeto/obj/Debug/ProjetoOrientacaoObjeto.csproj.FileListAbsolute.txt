@@ -1,0 +1,10 @@
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoOrientacaoObjeto\obj\Debug\ProjetoOrientacaoObjeto.csproj.AssemblyReference.cache
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoOrientacaoObjeto\obj\Debug\ProjetoOrientacaoObjeto.frmExecutaPessoa.resources
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoOrientacaoObjeto\obj\Debug\ProjetoOrientacaoObjeto.Properties.Resources.resources
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoOrientacaoObjeto\obj\Debug\ProjetoOrientacaoObjeto.csproj.GenerateResource.cache
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoOrientacaoObjeto\obj\Debug\ProjetoOrientacaoObjeto.csproj.CoreCompileInputs.cache
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoOrientacaoObjeto\bin\Debug\ProjetoOrientacaoObjeto.exe.config
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoOrientacaoObjeto\bin\Debug\ProjetoOrientacaoObjeto.exe
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoOrientacaoObjeto\bin\Debug\ProjetoOrientacaoObjeto.pdb
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoOrientacaoObjeto\obj\Debug\ProjetoOrientacaoObjeto.exe
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoOrientacaoObjeto\obj\Debug\ProjetoOrientacaoObjeto.pdb
