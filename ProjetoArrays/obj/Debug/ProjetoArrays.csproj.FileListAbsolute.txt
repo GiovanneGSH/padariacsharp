@@ -9,3 +9,5 @@ C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoArr
 C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoArrays\obj\Debug\ProjetoArrays.exe
 C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoArrays\obj\Debug\ProjetoArrays.pdb
 C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoArrays\obj\Debug\ProjetoArrays.frmNumAleatorio.resources
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoArrays\obj\Debug\ProjetoArrays.frmMatrizes.resources
+C:\Users\giovanne.shenrique\Documents\Visual Studio 2022\EmpresaTDS01\ProjetoArrays\obj\Debug\ProjetoArrays.frmNotas.resources
