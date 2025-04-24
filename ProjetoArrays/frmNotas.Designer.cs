@@ -43,7 +43,11 @@
             this.lblNota2 = new System.Windows.Forms.Label();
             this.lblNota1 = new System.Windows.Forms.Label();
             this.gpbConsulta = new System.Windows.Forms.GroupBox();
+            this.btnProximo = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.lblMostraNome = new System.Windows.Forms.Label();
             this.lblMostraCF = new System.Windows.Forms.Label();
+            this.btnConsulta = new System.Windows.Forms.Button();
             this.lblMostraMedia = new System.Windows.Forms.Label();
             this.lblMostraNotaTrabalho = new System.Windows.Forms.Label();
             this.lblMostraNota3 = new System.Windows.Forms.Label();
@@ -56,17 +60,14 @@
             this.lblRNotaProva3 = new System.Windows.Forms.Label();
             this.lblRNotaProva2 = new System.Windows.Forms.Label();
             this.lblRProva1 = new System.Windows.Forms.Label();
-            this.btnConsulta = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.lblMostraNome = new System.Windows.Forms.Label();
             this.ltbRecuperacao = new System.Windows.Forms.ListBox();
             this.ltbAprovados = new System.Windows.Forms.ListBox();
             this.ltbReprovados = new System.Windows.Forms.ListBox();
             this.gpbConceito = new System.Windows.Forms.GroupBox();
-            this.btnConceito = new System.Windows.Forms.Button();
             this.btnLimparConceito = new System.Windows.Forms.Button();
-            this.btnAnterior = new System.Windows.Forms.Button();
-            this.btnProximo = new System.Windows.Forms.Button();
+            this.btnConceito = new System.Windows.Forms.Button();
+            this.lblContaAlunos = new System.Windows.Forms.Label();
             this.gpbNotas.SuspendLayout();
             this.gpbConsulta.SuspendLayout();
             this.gpbConceito.SuspendLayout();
@@ -74,6 +75,7 @@
             // 
             // gpbNotas
             // 
+            this.gpbNotas.Controls.Add(this.lblContaAlunos);
             this.gpbNotas.Controls.Add(this.btnInserir);
             this.gpbNotas.Controls.Add(this.btnLimpar);
             this.gpbNotas.Controls.Add(this.txtNome);
@@ -102,7 +104,7 @@
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(134, 38);
             this.btnInserir.TabIndex = 5;
-            this.btnInserir.Text = "&Inserir Aluno";
+            this.btnInserir.Text = "&Inserir Nota";
             this.btnInserir.UseVisualStyleBackColor = false;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
@@ -230,6 +232,36 @@
             this.gpbConsulta.TabStop = false;
             this.gpbConsulta.Text = "Consulta";
             // 
+            // btnProximo
+            // 
+            this.btnProximo.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnProximo.Location = new System.Drawing.Point(505, 158);
+            this.btnProximo.Name = "btnProximo";
+            this.btnProximo.Size = new System.Drawing.Size(99, 38);
+            this.btnProximo.TabIndex = 19;
+            this.btnProximo.Text = "&Próximo";
+            this.btnProximo.UseVisualStyleBackColor = false;
+            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
+            // 
+            // btnAnterior
+            // 
+            this.btnAnterior.BackColor = System.Drawing.Color.NavajoWhite;
+            this.btnAnterior.Location = new System.Drawing.Point(396, 158);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(99, 38);
+            this.btnAnterior.TabIndex = 18;
+            this.btnAnterior.Text = "&Anterior";
+            this.btnAnterior.UseVisualStyleBackColor = false;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
+            // 
+            // lblMostraNome
+            // 
+            this.lblMostraNome.AutoSize = true;
+            this.lblMostraNome.Location = new System.Drawing.Point(132, 31);
+            this.lblMostraNome.Name = "lblMostraNome";
+            this.lblMostraNome.Size = new System.Drawing.Size(0, 20);
+            this.lblMostraNome.TabIndex = 17;
+            // 
             // lblMostraCF
             // 
             this.lblMostraCF.AutoSize = true;
@@ -237,6 +269,18 @@
             this.lblMostraCF.Name = "lblMostraCF";
             this.lblMostraCF.Size = new System.Drawing.Size(0, 20);
             this.lblMostraCF.TabIndex = 16;
+            // 
+            // btnConsulta
+            // 
+            this.btnConsulta.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulta.Location = new System.Drawing.Point(19, 158);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Size = new System.Drawing.Size(99, 38);
+            this.btnConsulta.TabIndex = 7;
+            this.btnConsulta.Text = "&Consulta";
+            this.btnConsulta.UseVisualStyleBackColor = false;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // lblMostraMedia
             // 
@@ -284,9 +328,9 @@
             this.lblRConceitoFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRConceitoFinal.Location = new System.Drawing.Point(392, 121);
             this.lblRConceitoFinal.Name = "lblRConceitoFinal";
-            this.lblRConceitoFinal.Size = new System.Drawing.Size(128, 20);
+            this.lblRConceitoFinal.Size = new System.Drawing.Size(129, 20);
             this.lblRConceitoFinal.TabIndex = 10;
-            this.lblRConceitoFinal.Text = "Conveito Final:";
+            this.lblRConceitoFinal.Text = "Conceito Final:";
             // 
             // lblRMedia
             // 
@@ -348,18 +392,6 @@
             this.lblRProva1.TabIndex = 0;
             this.lblRProva1.Text = "Nota Prova 1:";
             // 
-            // btnConsulta
-            // 
-            this.btnConsulta.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsulta.Location = new System.Drawing.Point(19, 158);
-            this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(99, 38);
-            this.btnConsulta.TabIndex = 7;
-            this.btnConsulta.Text = "&Consulta";
-            this.btnConsulta.UseVisualStyleBackColor = false;
-            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
-            // 
             // btnSair
             // 
             this.btnSair.BackColor = System.Drawing.Color.LightCoral;
@@ -371,14 +403,6 @@
             this.btnSair.Text = "&Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
-            // lblMostraNome
-            // 
-            this.lblMostraNome.AutoSize = true;
-            this.lblMostraNome.Location = new System.Drawing.Point(132, 31);
-            this.lblMostraNome.Name = "lblMostraNome";
-            this.lblMostraNome.Size = new System.Drawing.Size(0, 20);
-            this.lblMostraNome.TabIndex = 17;
             // 
             // ltbRecuperacao
             // 
@@ -425,17 +449,6 @@
             this.gpbConceito.TabStop = false;
             this.gpbConceito.Text = "Conceito Final";
             // 
-            // btnConceito
-            // 
-            this.btnConceito.BackColor = System.Drawing.Color.LightBlue;
-            this.btnConceito.Location = new System.Drawing.Point(14, 317);
-            this.btnConceito.Name = "btnConceito";
-            this.btnConceito.Size = new System.Drawing.Size(118, 44);
-            this.btnConceito.TabIndex = 14;
-            this.btnConceito.Text = "Conceito &Final";
-            this.btnConceito.UseVisualStyleBackColor = false;
-            this.btnConceito.Click += new System.EventHandler(this.btnConceito_Click);
-            // 
             // btnLimparConceito
             // 
             this.btnLimparConceito.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -447,27 +460,24 @@
             this.btnLimparConceito.UseVisualStyleBackColor = false;
             this.btnLimparConceito.Click += new System.EventHandler(this.btnLimparConceito_Click);
             // 
-            // btnAnterior
+            // btnConceito
             // 
-            this.btnAnterior.BackColor = System.Drawing.Color.NavajoWhite;
-            this.btnAnterior.Location = new System.Drawing.Point(396, 158);
-            this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(99, 38);
-            this.btnAnterior.TabIndex = 18;
-            this.btnAnterior.Text = "&Anterior";
-            this.btnAnterior.UseVisualStyleBackColor = false;
-            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
+            this.btnConceito.BackColor = System.Drawing.Color.LightBlue;
+            this.btnConceito.Location = new System.Drawing.Point(14, 317);
+            this.btnConceito.Name = "btnConceito";
+            this.btnConceito.Size = new System.Drawing.Size(118, 44);
+            this.btnConceito.TabIndex = 14;
+            this.btnConceito.Text = "Conceito &Final";
+            this.btnConceito.UseVisualStyleBackColor = false;
+            this.btnConceito.Click += new System.EventHandler(this.btnConceito_Click);
             // 
-            // btnProximo
+            // lblContaAlunos
             // 
-            this.btnProximo.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnProximo.Location = new System.Drawing.Point(505, 158);
-            this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(99, 38);
-            this.btnProximo.TabIndex = 19;
-            this.btnProximo.Text = "&Próximo";
-            this.btnProximo.UseVisualStyleBackColor = false;
-            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
+            this.lblContaAlunos.AutoSize = true;
+            this.lblContaAlunos.Location = new System.Drawing.Point(470, 58);
+            this.lblContaAlunos.Name = "lblContaAlunos";
+            this.lblContaAlunos.Size = new System.Drawing.Size(0, 20);
+            this.lblContaAlunos.TabIndex = 9;
             // 
             // frmNotas
             // 
@@ -532,5 +542,6 @@
         private System.Windows.Forms.Button btnConceito;
         private System.Windows.Forms.Button btnProximo;
         private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Label lblContaAlunos;
     }
 }
