@@ -16,6 +16,10 @@ namespace ProjetoArrays
         public frmNotas()
         {
             InitializeComponent();
+
+            desativaBotaoAnterior();
+
+            verificaBotaoConceito();
         }
 
         int i = 0;
@@ -37,8 +41,43 @@ namespace ProjetoArrays
         double[,] prova3 = new double[3,3];
 
         double[,] trabalho = new double[3,3];
-             
 
+        private void desativaBotaoAnterior()
+        {
+            if (n == 0 || n < 0)
+            {
+                btnAnterior.Enabled = false;
+            }            
+        }
+
+        private void verificaBotaoConceito()
+        {
+            if (k < 9)
+            {
+                btnConceito.Enabled = false;
+            }
+            else 
+            { 
+                btnConceito.Enabled = true;
+            }
+        }
+
+        private void limpaLista()
+        {
+            ltbAprovados.Items.Clear();
+            ltbRecuperacao.Items.Clear();
+            ltbReprovados.Items.Clear();
+        }
+
+        private void limpaCampos() 
+        {
+            txtNome.Clear();
+            txtNome.Focus();
+            txtNota1.Clear();
+            txtNota2.Clear();
+            txtNota3.Clear();
+            txtNotaTrabalho.Clear();
+        }        
 
         private void btnInserir_Click(object sender, EventArgs e)
         {
@@ -52,14 +91,7 @@ namespace ProjetoArrays
 
             trabalho[i, j] = double.Parse(txtNotaTrabalho.Text);
                        
-
-            txtNome.Clear();
-            txtNome.Focus();
-
-            txtNota1.Clear();
-            txtNota2.Clear();
-            txtNota3.Clear();
-            txtNotaTrabalho.Clear();
+            limpaCampos();            
 
             j++;
 
@@ -76,12 +108,7 @@ namespace ProjetoArrays
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtNome.Clear();
-            txtNota1.Clear();
-            txtNota2.Clear();
-            txtNota3.Clear();
-            txtNotaTrabalho.Clear();
-            txtNome.Focus();
+            limpaCampos();
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -122,6 +149,17 @@ namespace ProjetoArrays
 
         private void btnProximo_Click(object sender, EventArgs e)
         {
+            if (n > 0)
+            {
+                btnAnterior.Enabled = true;
+            }
+
+            if (n == 3)
+            {
+                n = 0;
+                m++;
+            }
+
             lblMostraNome.Text = alunos[m, n];            
             lblMostraNota1.Text = prova1[m, n].ToString();
             lblMostraNota2.Text = prova2[m, n].ToString();
@@ -149,27 +187,71 @@ namespace ProjetoArrays
                 lblMostraCF.Text = "Reprovado";
             }
 
-            n++;
+            n++;           
 
-            if (n == 2)
+            if (m == 2 && n == 3)
             {
-                n = 0;
-                m++;
-                                
+                btnProximo.Enabled = false;
             }
-                       
+
         }
 
         private void btnAnterior_Click(object sender, EventArgs e)
         {
 
+            if (n > 0)
+            {
+                n = n -1;
+
+                lblMostraNome.Text = alunos[m, n];
+                lblMostraNota1.Text = prova1[m, n].ToString();
+                lblMostraNota2.Text = prova2[m, n].ToString();
+                lblMostraNota3.Text = prova3[m, n].ToString();
+                lblMostraNotaTrabalho.Text = trabalho[m, n].ToString();
+
+                double media = (prova1[m, n] + prova2[m, n] + prova3[m, n] + trabalho[m, n]) / 4;
+
+                lblMostraMedia.Text = media.ToString();
+
+                if (media == 10)
+                {
+                    lblMostraCF.Text = "Aprovado*";
+                }
+                else if (media >= 7)
+                {
+                    lblMostraCF.Text = "Aprovado";
+                }
+                else if (media >= 5 && media < 7)
+                {
+                    lblMostraCF.Text = "Recuperação";
+                }
+                else if (media < 5)
+                {
+                    lblMostraCF.Text = "Reprovado";
+                }
+
+                if (m == 2 && n == 0)
+                {
+                    m = m - 1;
+                    n = 3;
+                }
+                else if (m == 1 && n == 0) 
+                {
+                    m = m - 1;
+                    n = 3;
+                }
+                else if (m == 0 && n == 0) 
+                { 
+                    btnAnterior.Enabled = false;
+                }               
+
+            }
+
         }
 
         private void btnLimparConceito_Click(object sender, EventArgs e)
         {
-            ltbAprovados.Items.Clear();
-            ltbRecuperacao.Items.Clear();
-            ltbReprovados.Items.Clear();
+            limpaLista();
         }
 
         private void btnConceito_Click(object sender, EventArgs e)
@@ -180,9 +262,7 @@ namespace ProjetoArrays
                 int i = 0;
                 int j = 0;
 
-                ltbAprovados.Items.Clear();
-                ltbRecuperacao.Items.Clear();
-                ltbReprovados.Items.Clear();
+                limpaLista();
 
                 ltbAprovados.Items.Add("----APROVADOS----");
                 ltbRecuperacao.Items.Add("----RECUPERAÇÃO----");
